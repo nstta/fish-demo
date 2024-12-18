@@ -54,7 +54,7 @@ const App = () => {
 
       try {
         const response = await axios.post(
-          "http://127.0.0.1:5002/process",
+          "https://13ea-35-231-248-202.ngrok-free.app/process",
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
@@ -127,7 +127,7 @@ const App = () => {
 
       try {
         const response = await axios.post(
-          "http://127.0.0.1:5002/process",
+          "https://13ea-35-231-248-202.ngrok-free.app/process",
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
@@ -215,7 +215,7 @@ const App = () => {
   
         try {
           const response = await axios.post(
-            "http://127.0.0.1:5002/process",
+            "https://13ea-35-231-248-202.ngrok-free.app/process",
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
