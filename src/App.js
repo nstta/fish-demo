@@ -127,7 +127,7 @@ const App = () => {
 
       try {
         const response = await axios.post(
-          "https://1525-35-199-37-249.ngrok-free.app/process",
+          "http://127.0.0.1:5002/process",
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
@@ -215,7 +215,7 @@ const App = () => {
   
         try {
           const response = await axios.post(
-            "https://1525-35-199-37-249.ngrok-free.app/process",
+            "http://127.0.0.1:5002/process",
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
