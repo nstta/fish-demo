@@ -54,7 +54,7 @@ const App = () => {
 
       try {
         const response = await axios.post(
-          "https://d0c6-34-145-21-212.ngrok-free.app/process",
+          "https://0fee-34-74-184-242.ngrok-free.app/process",
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
@@ -125,7 +125,7 @@ const App = () => {
 
       try {
         const response = await axios.post(
-          "https://d0c6-34-145-21-212.ngrok-free.app/process",
+          "https://0fee-34-74-184-242.ngrok-free.app/process",
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
@@ -212,7 +212,7 @@ const App = () => {
 
         try {
           const response = await axios.post(
-            "https://d0c6-34-145-21-212.ngrok-free.app/process",
+            "https://0fee-34-74-184-242.ngrok-free.app/process",
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
@@ -273,10 +273,13 @@ const App = () => {
 
   const handleStartCamera = () => {
     setShowVideo(true);
-    navigator.mediaDevices.getUserMedia({ video: true })
+    navigator.mediaDevices.getUserMedia(
+      {video: { facingMode: { ideal: "environment" } }}
+    )
       .then(stream => {
         const video = videoRef.current;
         video.srcObject = stream;
+        video.style.transform = "scaleX(-1)";
         video.play();
         video.onplaying = () => {
 
