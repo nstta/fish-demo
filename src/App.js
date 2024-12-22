@@ -54,7 +54,7 @@ const App = () => {
 
       try {
         const response = await axios.post(
-          "https://0fee-34-74-184-242.ngrok-free.app/process",
+          "https://77f6-34-148-163-90.ngrok-free.app/process",
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
@@ -125,7 +125,7 @@ const App = () => {
 
       try {
         const response = await axios.post(
-          "https://0fee-34-74-184-242.ngrok-free.app/process",
+          "https://77f6-34-148-163-90.ngrok-free.app/process",
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
@@ -212,7 +212,7 @@ const App = () => {
 
         try {
           const response = await axios.post(
-            "https://0fee-34-74-184-242.ngrok-free.app/process",
+            "https://77f6-34-148-163-90.ngrok-free.app/process",
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
